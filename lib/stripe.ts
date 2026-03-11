@@ -9,6 +9,7 @@ export const PRODUCTS: Product[] = [
     price: 450,
     launchPrice: 360,
     currency: 'eur',
+    imageUrl: 'https://images.unsplash.com/photo-1588195538326-c5b1e6f79ec5?w=500&h=500&fit=crop',
   },
   {
     id: 'lemon',
@@ -17,6 +18,7 @@ export const PRODUCTS: Product[] = [
     price: 550,
     launchPrice: 440,
     currency: 'eur',
+    imageUrl: 'https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500&h=500&fit=crop',
   },
   {
     id: 'cheese',
@@ -25,6 +27,7 @@ export const PRODUCTS: Product[] = [
     price: 550,
     launchPrice: 440,
     currency: 'eur',
+    imageUrl: 'https://images.unsplash.com/photo-1599599810694-b5ac4dd87e8f?w=500&h=500&fit=crop',
   },
   {
     id: 'cheese-garlic',
@@ -33,6 +36,7 @@ export const PRODUCTS: Product[] = [
     price: 650,
     launchPrice: 520,
     currency: 'eur',
+    imageUrl: 'https://images.unsplash.com/photo-1608039755401-742245ab8520?w=500&h=500&fit=crop',
   },
 ];
 

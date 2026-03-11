@@ -8,17 +8,18 @@ export default function ProductSpotlight() {
     <SectionWrapper className="py-20">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-5xl font-bold text-center mb-12 text-[#8B4513]">
-          Featured: Clásico Roll
+          Destacado: El Rollito Clásico
         </h2>
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Product Image with 3D Tilt */}
           <div className="relative h-96 perspective group">
             <Image
-              src="https://images.unsplash.com/photo-1590412200641-540acbfc50d5?w=500&h=500&fit=crop"
-              alt="Clásico Roll"
+              src="https://images.unsplash.com/photo-1588195538326-c5b1e6f79ec5?w=600&h=600&fit=crop"
+              alt="Rollito Clásico"
               fill
               className="object-cover rounded-2xl group-hover:scale-105 transition-transform duration-300"
+              sizes="(max-width: 768px) 100vw, 50vw"
             />
           </div>
 
@@ -28,20 +29,20 @@ export default function ProductSpotlight() {
               El Clásico
             </h3>
             <p className="text-lg text-gray-700 mb-6">
-              Our signature roll. Soft, warm cinnamon dough with a perfect balance of sweetness and spice. 
-              This is where it all started.
+              Nuestro rollito estrella. Masa de canela suave y cálida con un equilibrio perfecto de dulzura y especias. 
+              Aquí es donde todo comenzó.
             </p>
 
             <div className="mb-8">
               <h4 className="text-xl font-semibold text-[#8B4513] mb-4">
-                Ingredients
+                Ingredientes
               </h4>
               <ul className="space-y-2 text-gray-700">
-                <li>✓ Premium cinnamon from Ceylon</li>
-                <li>✓ Organic butter</li>
-                <li>✓ Brown sugar</li>
-                <li>✓ Fresh yeast dough</li>
-                <li>✓ Cream cheese glaze</li>
+                <li>✓ Canela premium de Ceilán</li>
+                <li>✓ Mantequilla orgánica</li>
+                <li>✓ Azúcar moreno</li>
+                <li>✓ Masa fresca de levadura</li>
+                <li>✓ Glaseado de queso crema</li>
               </ul>
             </div>
 

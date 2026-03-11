@@ -60,7 +60,8 @@ const HeroSection: React.FC = () => {
           fill
           className="object-cover"
           priority
-          quality={90}
+          quality={85}
+          sizes="100vw"
         />
         {/* Dark Overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/40" />
