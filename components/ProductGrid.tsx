@@ -7,7 +7,7 @@ import type { Product } from '@/types';
 
 const ProductGrid: React.FC = () => {
   return (
-    <section className="py-16 px-4 bg-[#FDF6EC]">
+    <section id="products-section" className="py-16 px-4 bg-[#FDF6EC]">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-5xl font-bold text-center text-[#8B4513] mb-4">
           Nuestros Rollitos

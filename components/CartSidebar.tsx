@@ -72,7 +72,7 @@ export default function CartSidebar({ isOpen, onClose }: CartSidebarProps) {
                 >
                   <div className="flex-1">
                     <h3 className="font-semibold text-[#8B4513]">{item.name}</h3>
-                    <p className="text-sm text-gray-600">€{item.price.toFixed(2)}</p>
+                    <p className="text-sm text-gray-600">€{(item.price / 100).toFixed(2)}</p>
                   </div>
 
                   <div className="flex items-center gap-2">
