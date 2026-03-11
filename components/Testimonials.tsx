@@ -130,7 +130,9 @@ const Testimonials: React.FC = () => {
             {testimonialsData.map((testimonial, index) => (
               <div
                 key={index}
-                ref={el => testimonialRefs.current[index] = el}
+                ref={(el) => {
+                  if (el) testimonialRefs.current[index] = el;
+                }}
                 className="min-w-full flex-shrink-0 p-8 testimonial-slide"
                 // Initially hidden, opacity/transform handled by GSAP
                 style={{ opacity: 0, position: 'absolute', top: 0, left: 0, width: '100%' }}
