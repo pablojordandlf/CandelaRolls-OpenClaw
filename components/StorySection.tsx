@@ -15,10 +15,10 @@ interface StorySectionProps {
 
 // Default values for props
 const defaultProps: StorySectionProps = {
-  storyTitle: "Our Sweet Beginnings",
-  storyText: "Founded with a passion for baking, CandelaRolls has been serving warm, irresistible treats for over a decade. We believe in using the finest ingredients and time-honored techniques to create moments of pure joy.",
-  imageUrl: 'https://images.unsplash.com/photo-1618394368783-97069f8f4d5c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-  imageAlt: 'A baker displaying fresh cinnamon rolls',
+  storyTitle: "Nuestra Historia",
+  storyText: "Fundado con pasión por la repostería, CandelaRolls ha servido deliciosos rollitos de canela durante más de una década. Creemos en usar los mejores ingredientes y técnicas tradicionales para crear momentos de pura alegría.",
+  imageUrl: 'https://images.unsplash.com/photo-1588195538326-c5b1e6f79ec5?w=500&h=500&fit=crop',
+  imageAlt: 'Rollitos de canela artesanales frescos',
 };
 
 const StorySection: React.FC<StorySectionProps> = (props = {}) => {
@@ -106,7 +106,7 @@ const StorySection: React.FC<StorySectionProps> = (props = {}) => {
           {storyText}
         </p>
         <p className="text-lg leading-relaxed" style={textColumnStyle}>
-            We invite you to taste the tradition and love baked into every bite.
+            Te invitamos a probar la tradición y el amor horneado en cada bocado.
         </p>
       </div>
       <div

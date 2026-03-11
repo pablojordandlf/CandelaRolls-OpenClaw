@@ -115,7 +115,7 @@ export default function CartSidebar({ isOpen, onClose }: CartSidebarProps) {
               onClick={handleCheckout}
               className="w-full bg-[#8B4513] text-white py-3 rounded-lg hover:bg-opacity-90 font-semibold transition"
             >
-              Checkout
+              Pagar
             </button>
 
             <button

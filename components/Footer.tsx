@@ -19,35 +19,35 @@ const Footer: React.FC = () => {
             />
           </div>
           <p className="text-sm">
-            CandelaRolls - Baking happiness, one roll at a time.
+            CandelaRolls - Horneando felicidad, un rollito a la vez.
           </p>
         </div>
 
         {/* Links */}
         <div>
-          <h4 className="text-lg font-semibold text-white mb-4">Quick Links</h4>
+          <h4 className="text-lg font-semibold text-white mb-4">Enlaces</h4>
           <ul>
-            <li className="mb-2"><a href="#hero" className="hover:text-yellow-400 transition-colors duration-200">Home</a></li>
-            <li className="mb-2"><a href="#products" className="hover:text-yellow-400 transition-colors duration-200">Our Rolls</a></li>
-            <li className="mb-2"><a href="#story" className="hover:text-yellow-400 transition-colors duration-200">Our Story</a></li>
-            <li><a href="#testimonials" className="hover:text-yellow-400 transition-colors duration-200">Testimonials</a></li>
+            <li className="mb-2"><a href="#hero" className="hover:text-yellow-400 transition-colors duration-200">Inicio</a></li>
+            <li className="mb-2"><a href="#products" className="hover:text-yellow-400 transition-colors duration-200">Nuestros Rollitos</a></li>
+            <li className="mb-2"><a href="#story" className="hover:text-yellow-400 transition-colors duration-200">Nuestra Historia</a></li>
+            <li><a href="#testimonials" className="hover:text-yellow-400 transition-colors duration-200">Testimonios</a></li>
           </ul>
         </div>
 
         {/* Contact Information */}
         <div>
-          <h4 className="text-lg font-semibold text-white mb-4">Contact Us</h4>
-          <p className="mb-2">123 Cinnamon Lane</p>
-          <p className="mb-2">Sweetville, CA 90210</p>
-          <p className="mb-2">Email: info@candelarolls.com</p>
-          <p>Phone: (123) 456-7890</p>
+          <h4 className="text-lg font-semibold text-white mb-4">Contacto</h4>
+          <p className="mb-2">Calle Canela 123</p>
+          <p className="mb-2">Madrid, España</p>
+          <p className="mb-2">Email: hola@candelarolls.es</p>
+          <p>Teléfono: +34 (912) 345-678</p>
         </div>
         
       </div>
 
       {/* Copyright */}
       <div className="mt-8 pt-8 border-t border-gray-700 text-center text-sm">
-        <p>&copy; {new Date().getFullYear()} CandelaRolls. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} CandelaRolls. Todos los derechos reservados.</p>
       </div>
     </footer>
   );
