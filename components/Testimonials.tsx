@@ -136,7 +136,7 @@ const Testimonials: React.FC = () => {
                 style={{ opacity: 0, position: 'absolute', top: 0, left: 0, width: '100%' }}
               >
                 <blockquote className="text-2xl italic font-medium text-center leading-relaxed mb-6">
-                  "{testimonial.quote}"
+                  &quot;{testimonial.quote}&quot;
                 </blockquote>
                 <div className="text-center">
                   {renderStars(testimonial.rating)}
