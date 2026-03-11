@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { CartProvider } from "@/lib/hooks/useCart";
 
 export const metadata: Metadata = {
-  title: "CandelaRolls",
-  description: "Artisan Cinnamon Rolls",
+  title: "CandelaRolls - Artisan Cinnamon Rolls",
+  description: "Premium handcrafted cinnamon rolls",
 };
 
 export default function RootLayout({
@@ -13,7 +14,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className="bg-[#FDF6EC] text-[#1A1A1A]">
+        <CartProvider>{children}</CartProvider>
+      </body>
     </html>
   );
 }
