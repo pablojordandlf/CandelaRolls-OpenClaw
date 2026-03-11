@@ -9,7 +9,7 @@ export const PRODUCTS: Product[] = [
     price: 450,
     launchPrice: 360,
     currency: 'eur',
-    imageUrl: 'https://images.pexels.com/photos/5632631/pexels-photo-5632631.jpeg?w=500&h=500&fit=crop',
+    imageUrl: '/images/products/clasico.jpg',
   },
   {
     id: 'lemon',
@@ -18,7 +18,7 @@ export const PRODUCTS: Product[] = [
     price: 550,
     launchPrice: 440,
     currency: 'eur',
-    imageUrl: 'https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg?w=500&h=500&fit=crop',
+    imageUrl: '/images/products/limon.jpg',
   },
   {
     id: 'cheese',
@@ -27,7 +27,7 @@ export const PRODUCTS: Product[] = [
     price: 550,
     launchPrice: 440,
     currency: 'eur',
-    imageUrl: 'https://images.pexels.com/photos/3915857/pexels-photo-3915857.jpeg?w=500&h=500&fit=crop',
+    imageUrl: '/images/products/queso.jpg',
   },
   {
     id: 'cheese-garlic',
@@ -36,7 +36,7 @@ export const PRODUCTS: Product[] = [
     price: 650,
     launchPrice: 520,
     currency: 'eur',
-    imageUrl: 'https://images.pexels.com/photos/2979617/pexels-photo-2979617.jpeg?w=500&h=500&fit=crop',
+    imageUrl: '/images/products/queso-ajo.jpg',
   },
 ];
 
