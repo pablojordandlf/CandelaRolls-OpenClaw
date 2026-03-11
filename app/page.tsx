@@ -1,5 +1,6 @@
 'use client';
 
+import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
 import StorySection from '@/components/StorySection';
 import ProductGrid from '@/components/ProductGrid';
@@ -14,12 +15,7 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-[#FDF6EC]">
-      <button
-        onClick={() => setShowCart(!showCart)}
-        className="fixed top-4 right-4 z-40 bg-cinnamon text-white px-4 py-2 rounded-lg hover:bg-opacity-90 transition"
-      >
-        🛒 Cart
-      </button>
+      <Header onCartClick={() => setShowCart(!showCart)} />
 
       {showCart && <CartSidebar isOpen={showCart} onClose={() => setShowCart(false)} />}
 
