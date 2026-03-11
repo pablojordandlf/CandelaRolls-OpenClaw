@@ -3,6 +3,8 @@ import { stripe } from '@/lib/stripe';
 
 const webhookSecret = process.env.STRIPE_WEBHOOK_SECRET;
 
+const inMemoryOrders = new Map();
+
 export async function POST(request: NextRequest) {
   const body = await request.text();
   const signature = request.headers.get('stripe-signature');
@@ -18,7 +20,6 @@ export async function POST(request: NextRequest) {
     switch (event.type) {
       case 'checkout.session.completed':
         console.log('✓ Payment successful:', event.data.object.id);
-        // TODO: Save order to database
         break;
 
       case 'checkout.session.expired':
@@ -26,7 +27,7 @@ export async function POST(request: NextRequest) {
         break;
 
       default:
-        console.log(`Event: ${event.type}`);
+        console.log('Event:', event.type);
     }
 
     return Response.json({ received: true });

@@ -7,26 +7,26 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 // gsap.registerPlugin(ScrollTrigger); // Assume this is registered globally or in a layout effect
 
 interface StorySectionProps {
-  storyTitle: string;
-  storyText: string;
-  imageUrl: string;
-  imageAlt: string;
+  storyTitle?: string;
+  storyText?: string;
+  imageUrl?: string;
+  imageAlt?: string;
 }
 
 // Default values for props
-const defaultProps: Partial<StorySectionProps> = {
+const defaultProps: StorySectionProps = {
   storyTitle: "Our Sweet Beginnings",
   storyText: "Founded with a passion for baking, CandelaRolls has been serving warm, irresistible treats for over a decade. We believe in using the finest ingredients and time-honored techniques to create moments of pure joy.",
   imageUrl: 'https://images.unsplash.com/photo-1618394368783-97069f8f4d5c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
   imageAlt: 'A baker displaying fresh cinnamon rolls',
 };
 
-const StorySection: React.FC<StorySectionProps> = (props) => {
+const StorySection: React.FC<StorySectionProps> = (props = {}) => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const textRef = useRef<HTMLDivElement>(null);
   const imageRef = useRef<HTMLDivElement>(null);
 
-  const { storyTitle, storyText, imageUrl, imageAlt } = { ...defaultProps, ...props };
+  const { storyTitle, storyText, imageUrl, imageAlt } = { ...defaultProps, ...props } as Required<StorySectionProps>;
 
   useEffect(() => {
     const element = sectionRef.current;

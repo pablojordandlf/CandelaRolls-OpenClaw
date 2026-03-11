@@ -19,7 +19,7 @@ export async function POST(request: NextRequest) {
         product_data: {
           name: item.name,
         },
-        unit_amount: Math.round(item.price * 100), // Convert to cents
+        unit_amount: Math.round(item.price * 100),
       },
       quantity: item.quantity,
     }));
@@ -30,8 +30,8 @@ export async function POST(request: NextRequest) {
       payment_method_types: ['card'],
       line_items: lineItems,
       mode: 'payment',
-      success_url: `${baseUrl}/success?session_id={CHECKOUT_SESSION_ID}`,
-      cancel_url: `${baseUrl}/`,
+      success_url: baseUrl + '/success?session_id={CHECKOUT_SESSION_ID}',
+      cancel_url: baseUrl + '/',
       customer_email: email,
     });
 
@@ -39,7 +39,7 @@ export async function POST(request: NextRequest) {
   } catch (error) {
     console.error('Checkout error:', error);
     return Response.json(
-      { error: 'Failed to create checkout session' },
+      { error: 'Checkout failed' },
       { status: 500 }
     );
   }
